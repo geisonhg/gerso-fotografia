@@ -1,0 +1,355 @@
+/* ============================================
+   Gerso Fotografía - Estilos globales optimizados
+   ============================================ */
+
+/* Reset y tipografía base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+  color: #1f2937;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+  line-height: 1.6;
+}
+
+/* ============================================
+   HEADER Y NAVEGACIÓN
+   ============================================ */
+header {
+  background: linear-gradient(to right, #2563eb, #1e40af);
+  color: #fff;
+  padding: 1rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo-container img {
+  max-height: 80px;
+  height: auto;
+  width: auto;
+}
+
+.slogan {
+  display: none;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #e0f2fe;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 0.75rem;
+  }
+
+  nav a {
+    font-size: 1.1rem;
+  }
+}
+
+/* ============================================
+   SECCIONES GENERALES
+   ============================================ */
+main section {
+  padding: 3rem 1rem;
+  max-width: 960px;
+  margin: auto;
+  text-align: center;
+}
+
+main section h2 {
+  font-size: 1.75rem;
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+}
+
+main section p,
+main section ol,
+main section blockquote {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* ============================================
+   GALERÍA
+   ============================================ */
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.galeria-grid img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria-grid img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ============================================
+   PRECIOS
+   ============================================ */
+.lista-precios {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto;
+  max-width: 400px;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.texto-precios {
+  margin-top: 1.5rem;
+  font-size: 1.05rem;
+  text-align: center;
+  color: #1f2937;
+}
+
+.imagen-precios {
+  margin-top: 1rem;
+  max-width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ============================================
+   TESTIMONIOS
+   ============================================ */
+.testimonios {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.testimonios blockquote {
+  font-style: italic;
+  background-color: #f3f4f6;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid #2563eb;
+  border-radius: 6px;
+}
+
+/* ============================================
+   CÓMO FUNCIONA
+   ============================================ */
+ol {
+  text-align: left;
+  margin-top: 2rem;
+  padding-left: 1.5rem;
+}
+
+ol li {
+  margin-bottom: 0.5rem;
+}
+
+/* ============================================
+   CONTACTO
+   ============================================ */
+#contacto a {
+  color: #2563eb;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input,
+textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1e40af;
+}
+
+/* ============================================
+   MAPA
+   ============================================ */
+#ubicacion {
+  margin-top: 2rem;
+}
+
+#ubicacion p {
+  margin-bottom: 1rem;
+}
+
+.mapa-container iframe {
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+footer {
+  background-color: #e0f2fe;
+  color: #1e3a8a;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.875rem;
+  margin-top: 3rem;
+}
+
+/* ============================================
+   BOTÓN FLOTANTE WHATSAPP
+   ============================================ */
+.btn-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  padding: 0.8rem;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+  width: 60px;
+  height: 60px;
+}
+
+.btn-whatsapp:hover {
+  transform: scale(1.1);
+}
+
+.btn-whatsapp img {
+  width: 28px;
+  height: 28px;
+}
+
+/* ============================================
+   ENLACE DE BOTÓN (opcional)
+   ============================================ */
+.boton-link {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #f3f4f6;
+  border-radius: 999px;
+  color: #1e40af;
+  font-weight: 500;
+  text-decoration: none;
+  margin-top: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: background-color 0.3s ease;
+}
+
+.boton-link:hover {
+  background-color: #e0e7ff;
+}
+
+/* ============================================
+   FAQ
+   ============================================ */
+#faq {
+  padding: 3rem 1rem;
+  max-width: 720px;
+  margin: auto;
+  text-align: left;
+  scroll-margin-top: 100px;
+}
+
+#faq h2 {
+  text-align: center;
+  color: #1e3a8a;
+  margin-bottom: 1.5rem;
+}
+
+details {
+  background-color: #f9fafb;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+details:hover {
+  background-color: #f3f4f6;
+}
+
+summary {
+  font-weight: 600;
+  color: #111827;
+  font-size: 1rem;
+}
+
+summary:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 4px;
+}
+
+details p {
+  margin-top: 0.5rem;
+  color: #374151;
+}

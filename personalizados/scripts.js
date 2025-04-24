@@ -49,4 +49,40 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   });
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const form = document.querySelector("form");
+    const mensaje = document.getElementById("mensaje-formulario");
+  
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+  
+      const formData = new FormData(form);
+  
+      try {
+        const response = await fetch(form.action, {
+          method: "POST",
+          body: formData,
+          headers: {
+            Accept: "application/json",
+          },
+        });
+  
+        if (response.ok) {
+          mensaje.textContent = "✅ ¡Tu pedido fue enviado exitosamente!";
+          mensaje.classList.remove("mensaje-oculto");
+          mensaje.classList.add("mensaje-visible");
+          form.reset();
+        } else {
+          mensaje.textContent = "❌ Ocurrió un error. Intenta nuevamente.";
+          mensaje.classList.remove("mensaje-oculto");
+          mensaje.classList.add("mensaje-visible");
+        }
+      } catch (error) {
+        mensaje.textContent = "⚠️ Error al enviar el formulario.";
+        mensaje.classList.remove("mensaje-oculto");
+        mensaje.classList.add("mensaje-visible");
+      }
+    });
+  });
   

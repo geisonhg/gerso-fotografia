@@ -370,5 +370,19 @@
   margin-bottom: 4rem;
 }
 
+.mensaje-oculto {
+  display: none;
+  margin-top: 1rem;
+  text-align: center;
+  color: green;
+  font-weight: bold;
+  background-color: #e0ffe0;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.mensaje-visible {
+  display: block;
+}
 
   

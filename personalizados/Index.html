@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gerso Personalizados</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo-container">
+        <img src="images/logo.PNG" alt="Logo Gerso" />
+      </div>
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#como">Cómo personalizar</a>
+        <a href="#contacto">Contacto</a>
+        <a href="index.html">← Fotografía</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <h2>Regalos con alma, hechos a tu medida</h2>
+      <p>Personaliza tus momentos especiales con detalles únicos.</p>
+      <a href="#productos" class="btn">Ver productos</a>
+    </div>
+  </section>
+
+  <section id="productos">
+    <h2 class="reveal">Productos destacados</h2>
+    <div class="galeria">
+      <div class="producto reveal">
+        <img src="images/mugmagico.jpg" alt="Taza personalizada" />
+        <h3>Mug magico</h3>
+        <p>Perfectas para regalar en cumpleaños, aniversarios o eventos.</p>
+      </div>
+      <div class="producto reveal">
+        <img src="images/retabloMascota.jpg" alt="Cojín personalizado" />
+        <h3>Retablos</h3>
+        <p>Agrega un mensaje especial para decorar o abrazar.</p>
+      </div>
+      <div class="producto reveal">
+        <img src="images/minibook.jpg" alt="Camiseta personalizada" />
+        <h3>Mini Book</h3>
+        <p>Diseños únicos para sorprender con estilo.</p>
+      </div>
+      <div class="producto reveal">
+        <img src="images/rompecabezas.jpg" alt="Rompecabezas personalizado" />
+        <h3>Rompecabezas con tus fotos</h3>
+        <p>Un detalle divertido y sentimental para compartir en familia.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="ocasiones" class="franja-ocasiones reveal">
+    <h2>Ideal para toda ocasión</h2>
+    <ul>
+      <li>🎉 Cumpleaños</li>
+      <li>💑 Aniversarios</li>
+      <li>👶 Baby showers</li>
+      <li>👨‍👩‍👧‍👦 Familia</li>
+      <li>🏢 Empresas</li>
+      <li>🎓 Graduaciones</li>
+      <li>🎁 Fechas especiales</li>
+    </ul>
+  </section>
+
+  <section id="formulario-pedido">
+    <h2 class="reveal">Haz tu pedido personalizado</h2>
+    <form action="https://formspree.io/f/xjkwvdgp" method="POST" class="formulario reveal">
+      <input type="text" name="nombre" placeholder="Tu nombre" required />
+      <input type="email" name="email" placeholder="Tu correo electrónico" required />
+      <select name="producto" required>
+        <option value="">Selecciona un producto</option>
+        <option value="taza">Taza personalizada</option>
+        <option value="cojin">Cojín personalizado</option>
+        <option value="camiseta">Camiseta personalizada</option>
+        <option value="rompecabezas">Rompecabezas personalizado</option>
+      </select>
+      <textarea name="mensaje" placeholder="Cuéntanos tu idea o dedicatoria" required></textarea>
+      <input type="file" name="archivo" accept="image/*" />
+      <button type="submit">Enviar pedido</button>
+    </form>
+    <div id="mensaje-formulario" class="mensaje-oculto"></div>
+  </section>
+
+  <section id="como">
+    <h2>¿Cómo personalizar?</h2>
+    <ol>
+      <li>Elegí el producto que más te guste</li>
+      <li>Envía tu diseño o idea por WhatsApp</li>
+      <li>Te mostramos una muestra digital</li>
+      <li>Confirmás y recibís tu pedido</li>
+    </ol>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>📞 WhatsApp: <a href="https://wa.me/573001112233">+57 300 111 2233</a></p>
+    <p>📧 Correo: gersopersonalizados@gmail.com</p>
+  </section>
+
+  <section id="ubicacion">
+    <h2>¿Dónde estamos?</h2>
+    <p>Estamos ubicados en Villamaría, Caldas. Puedes visitarnos directamente en el centro del municipio:</p>
+    <div class="mapa-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.338942361515!2d-75.5123289!3d5.0453611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e476f65db4b6c17%3A0x21f60f3e567dc1b4!2sGerso%20Fotograf%C3%ADa!5e0!3m2!1ses-419!2sco!4v1713716260641!5m2!1ses-419!2sco"
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <a href="/index.html">📷 Gerso Fotografía</a>
+      <a href="/publicidad/Index.html">🖨️ Gerso Publicidad</a>
+      <a href="#">🎁 Gerso Personalizados</a>
+    </div>
+    <p>&copy; 2025 Gerso Personalizados. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+
+  <a href="https://wa.me/573001112233" class="btn-whatsapp" target="_blank" aria-label="WhatsApp">
+    <img src="images/WhatsappIcon.svg" alt="WhatsApp" />
+  </a>
+</body>
+
+</html>

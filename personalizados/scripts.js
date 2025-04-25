@@ -55,4 +55,11 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", () => {
     btnScrollTop.style.display = window.scrollY > 600 ? "block" : "none";
   });
+
+  const comoSection = document.getElementById("como");
+  if (comoSection) {
+    comoSection.classList.add("seccion-como");
+  }
+
 });
+

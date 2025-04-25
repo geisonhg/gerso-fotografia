@@ -359,3 +359,25 @@ footer {
     transform: translateY(0);
   }
 }
+
+.seccion-como {
+  background: linear-gradient(to right, #ffffff, #38bdf8);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.seccion-como ol {
+  padding-left: 2rem;
+}
+
+.seccion-como li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #1e293b;
+}
